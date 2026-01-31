@@ -1,0 +1,260 @@
+/* About Page Styles */
+.about {
+  min-height: 100vh;
+}
+
+/* Page Header */
+.page-header {
+  background: linear-gradient(135deg, #001a33 0%, #000000 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+  border-bottom: 2px solid #0066ff;
+}
+
+.page-title {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: #cccccc;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Section Heading */
+.section-heading {
+  font-size: 2.5rem;
+  color: #0066ff;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* About Introduction */
+.about-intro {
+  padding: 4rem 0;
+  background-color: #000000;
+}
+
+.intro-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  color: #cccccc;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+/* Vision & Mission Section */
+.vision-mission {
+  padding: 4rem 0;
+  background-color: #0a0a0a;
+}
+
+.vm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.vm-card {
+  background-color: #000000;
+  border: 2px solid #0066ff;
+  border-radius: 10px;
+  padding: 2rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.vm-card:hover {
+  transform: translateY(-5px);
+  border-color: #ffffff;
+}
+
+.vm-title {
+  font-size: 1.8rem;
+  color: #0066ff;
+  margin-bottom: 1rem;
+}
+
+.vm-text {
+  color: #cccccc;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* Faculty Coordinator Section */
+.coordinator-section {
+  padding: 4rem 0;
+  background-color: #000000;
+}
+
+.coordinator-card {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #0a0a0a;
+  border: 2px solid #0066ff;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.coordinator-image {
+  flex-shrink: 0;
+}
+
+.placeholder-img {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(135deg, #0066ff, #001a33);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.coordinator-info {
+  flex-grow: 1;
+}
+
+.coordinator-name {
+  font-size: 1.8rem;
+  color: #0066ff;
+  margin-bottom: 0.5rem;
+}
+
+.coordinator-designation {
+  font-size: 1.1rem;
+  color: #aaaaaa;
+  margin-bottom: 1rem;
+}
+
+.coordinator-bio {
+  color: #cccccc;
+  line-height: 1.7;
+}
+
+/* Student Leads Section */
+.leads-section {
+  padding: 4rem 0;
+  background-color: #0a0a0a;
+}
+
+.leads-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.lead-card {
+  background-color: #000000;
+  border: 2px solid #0066ff;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.lead-card:hover {
+  transform: translateY(-10px);
+  border-color: #ffffff;
+}
+
+.lead-image {
+  margin-bottom: 1rem;
+}
+
+.lead-image .placeholder-img {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+.lead-name {
+  font-size: 1.3rem;
+  color: #0066ff;
+  margin-bottom: 0.5rem;
+}
+
+.lead-position {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 0.3rem;
+}
+
+.lead-details {
+  font-size: 0.9rem;
+  color: #aaaaaa;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .page-title {
+    font-size: 2.5rem;
+  }
+
+  .section-heading {
+    font-size: 2rem;
+  }
+
+  .coordinator-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-text {
+    text-align: left;
+  }
+
+  .vm-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leads-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page-header {
+    padding: 3rem 1rem;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .page-subtitle {
+    font-size: 1rem;
+  }
+
+  .section-heading {
+    font-size: 1.8rem;
+  }
+
+  .coordinator-card {
+    padding: 1.5rem;
+  }
+
+  .placeholder-img {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+  }
+}

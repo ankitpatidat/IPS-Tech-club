@@ -1,0 +1,200 @@
+/* Events Page Styles */
+.events {
+  min-height: 100vh;
+}
+
+/* Page Header */
+.page-header {
+  background: linear-gradient(135deg, #001a33 0%, #000000 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+  border-bottom: 2px solid #0066ff;
+}
+
+.page-title {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: #cccccc;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Events Section */
+.events-section {
+  padding: 4rem 0;
+  background-color: #000000;
+}
+
+/* Tabs */
+.events-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.tab-btn {
+  background-color: transparent;
+  color: #cccccc;
+  border: 2px solid #0066ff;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.tab-btn.active {
+  background-color: #0066ff;
+  color: #ffffff;
+}
+
+.tab-btn:hover {
+  background-color: #0066ff;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Events Grid */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Event Card */
+.event-card {
+  background-color: #0a0a0a;
+  border: 2px solid #0066ff;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  border-color: #ffffff;
+}
+
+.event-card.past-event {
+  border-color: #333333;
+}
+
+.event-card.past-event:hover {
+  border-color: #666666;
+}
+
+.event-type {
+  background-color: #0066ff;
+  color: #ffffff;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+
+.past-event .event-type {
+  background-color: #333333;
+}
+
+.event-title {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.event-details {
+  margin-bottom: 1rem;
+}
+
+.event-info {
+  color: #cccccc;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-icon {
+  font-size: 1rem;
+}
+
+.event-description {
+  color: #aaaaaa;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.register-btn {
+  background-color: #0066ff;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #0052cc;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .page-title {
+    font-size: 2.5rem;
+  }
+
+  .events-tabs {
+    flex-direction: column;
+  }
+
+  .tab-btn {
+    width: 100%;
+  }
+
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page-header {
+    padding: 3rem 1rem;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .page-subtitle {
+    font-size: 1rem;
+  }
+
+  .event-card {
+    padding: 1.5rem;
+  }
+
+  .event-title {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,23 @@
+/* Global App Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: #000000;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection styling */
+::selection {
+  background-color: #0066ff;
+  color: #ffffff;
+}

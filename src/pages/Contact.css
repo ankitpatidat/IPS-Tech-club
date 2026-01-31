@@ -1,0 +1,262 @@
+/* Contact Page Styles */
+.contact {
+  min-height: 100vh;
+}
+
+/* Page Header */
+.page-header {
+  background: linear-gradient(135deg, #001a33 0%, #000000 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+  border-bottom: 2px solid #0066ff;
+}
+
+.page-title {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: #cccccc;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 4rem 0;
+  background-color: #000000;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+/* Contact Information */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-heading {
+  font-size: 2.5rem;
+  color: #0066ff;
+  margin-bottom: 0.5rem;
+}
+
+.info-description {
+  font-size: 1.1rem;
+  color: #cccccc;
+  line-height: 1.7;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.contact-text h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-text p {
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+.social-links {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.social-links a {
+  color: #0066ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ffffff;
+}
+
+.social-links span {
+  color: #666666;
+}
+
+/* Contact Form */
+.contact-form-container {
+  background-color: #0a0a0a;
+  border: 2px solid #0066ff;
+  border-radius: 10px;
+  padding: 2.5rem;
+}
+
+.form-heading {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.success-message {
+  background-color: #004d1a;
+  color: #00ff66;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #00ff66;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  color: #cccccc;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  background-color: #000000;
+  border: 2px solid #333333;
+  color: #ffffff;
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #0066ff;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  background-color: #0066ff;
+  color: #ffffff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0052cc;
+  transform: translateY(-2px);
+}
+
+.form-footer {
+  margin-top: 1rem;
+  text-align: center;
+  color: #aaaaaa;
+}
+
+.form-footer a {
+  color: #0066ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.form-footer a:hover {
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 968px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-title {
+    font-size: 2.5rem;
+  }
+
+  .info-heading {
+    font-size: 2rem;
+  }
+
+  .form-heading {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page-header {
+    padding: 3rem 1rem;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .page-subtitle {
+    font-size: 1rem;
+  }
+
+  .contact-form-container {
+    padding: 1.5rem;
+  }
+
+  .contact-icon {
+    font-size: 2rem;
+  }
+
+  .contact-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .info-heading {
+    font-size: 1.8rem;
+  }
+
+  .form-heading {
+    font-size: 1.5rem;
+  }
+}

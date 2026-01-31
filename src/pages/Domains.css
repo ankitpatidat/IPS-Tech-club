@@ -1,0 +1,191 @@
+/* Domains Page Styles */
+.domains {
+  min-height: 100vh;
+}
+
+/* Page Header */
+.page-header {
+  background: linear-gradient(135deg, #001a33 0%, #000000 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+  border-bottom: 2px solid #0066ff;
+}
+
+.page-title {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: #cccccc;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Domains Section */
+.domains-section {
+  padding: 4rem 0;
+  background-color: #000000;
+}
+
+.domains-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Domain Card */
+.domain-card {
+  background-color: #0a0a0a;
+  border: 2px solid #0066ff;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.domain-card:hover {
+  transform: translateY(-10px);
+  border-color: #ffffff;
+  background-color: #001a33;
+}
+
+.domain-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.domain-name {
+  font-size: 1.8rem;
+  color: #0066ff;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.domain-description {
+  color: #cccccc;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.domain-footer {
+  width: 100%;
+}
+
+.learn-more-btn {
+  background-color: transparent;
+  color: #0066ff;
+  border: 2px solid #0066ff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #0066ff;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* Join Domain Section */
+.join-domain-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #001a33 0%, #000000 100%);
+  text-align: center;
+}
+
+.join-title {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.join-description {
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-primary-large {
+  background-color: #0066ff;
+  color: #ffffff;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary-large:hover {
+  background-color: #0052cc;
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .page-title {
+    font-size: 2.5rem;
+  }
+
+  .domains-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .join-title {
+    font-size: 2rem;
+  }
+
+  .join-description {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page-header {
+    padding: 3rem 1rem;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .page-subtitle {
+    font-size: 1rem;
+  }
+
+  .domain-card {
+    padding: 1.5rem;
+  }
+
+  .domain-icon {
+    font-size: 3rem;
+  }
+
+  .domain-name {
+    font-size: 1.5rem;
+  }
+
+  .btn-primary-large {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+}
